@@ -1,9 +1,3 @@
-/*
-  Main JavaScript for interactive functionality.  Handles the mobile
-  navigation menu, portfolio filtering, simple contact form
-  validation/feedback and dynamic year in the footer.  All code
-  executes after the DOM has fully loaded.
-*/
 
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile navigation toggle
@@ -26,25 +20,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Portfolio filtering
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const portfolioItems = document.querySelectorAll('.portfolio-item');
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      document.querySelector('.filter-btn.active').classList.remove('active');
-      button.classList.add('active');
-      const filter = button.getAttribute('data-filter');
-      portfolioItems.forEach(item => {
-        const category = item.getAttribute('data-category') || '';
-        // When filter is 'all', show everything; otherwise match substring
-        if (filter === 'all' || category.toLowerCase().includes(filter.toLowerCase())) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
-      });
+    // Portfolio filtering
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const activeBtn = document.querySelector('.filter-btn.active');
+            if (activeBtn) activeBtn.classList.remove('active');
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+
+            portfolioItems.forEach(item => {
+                const category = item.getAttribute('data-category') || '';
+
+                if (filter === 'all' || category.toLowerCase() === filter.toLowerCase()) {
+                    item.classList.remove('hidden'); 
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        });
     });
-  });
 
   // Simple contact form handler
   const contactForm = document.getElementById('contact-form');

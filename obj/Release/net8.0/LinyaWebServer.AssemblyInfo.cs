@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LinyaWebServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+081decb3469832d00e992603fe218bbf680c3030")]
 [assembly: System.Reflection.AssemblyProductAttribute("LinyaWebServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LinyaWebServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,11 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
-  <!--
-    The Blazor Server project file.  This project is configured to target
-    .NET 8 and uses the ASP.NET Core Web SDK which includes support for
-    Razor components.  Nullable reference types and implicit global usings
-    are enabled to encourage modern C# coding patterns.
-  -->
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>

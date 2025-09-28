@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ruanl\\OneDrive\\桌面\\LinyaWebServer\\LinyaWebServer.csproj",
+      "projectUniqueName": "C:\\LinyaWeb\\LinyaWebServer.csproj",
       "projectName": "LinyaWebServer",
-      "projectPath": "C:\\Users\\ruanl\\OneDrive\\桌面\\LinyaWebServer\\LinyaWebServer.csproj",
+      "projectPath": "C:\\LinyaWeb\\LinyaWebServer.csproj",
       "packagesPath": "C:\\Users\\ruanl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ruanl\\OneDrive\\桌面\\LinyaWebServer\\obj\\",
+      "outputPath": "C:\\LinyaWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
