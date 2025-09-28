@@ -1,0 +1,2 @@
+C:\LinyaWeb\wwwroot\assets\figma
+C:\LinyaWeb\wwwroot\assets\nodejs.png
