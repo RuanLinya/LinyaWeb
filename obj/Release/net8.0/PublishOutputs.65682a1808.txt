@@ -1,0 +1,5 @@
+C:\Users\ruanl\OneDrive\桌面\LinyaWebServer\bin\Release\net8.0\publish\LinyaWebServer.exe
+C:\Users\ruanl\OneDrive\桌面\LinyaWebServer\bin\Release\net8.0\publish\LinyaWebServer.dll
+C:\Users\ruanl\OneDrive\桌面\LinyaWebServer\bin\Release\net8.0\publish\LinyaWebServer.deps.json
+C:\Users\ruanl\OneDrive\桌面\LinyaWebServer\bin\Release\net8.0\publish\LinyaWebServer.runtimeconfig.json
+C:\Users\ruanl\OneDrive\桌面\LinyaWebServer\bin\Release\net8.0\publish\LinyaWebServer.pdb

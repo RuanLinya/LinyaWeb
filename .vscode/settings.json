@@ -1,0 +1,5 @@
+{
+    "appService.preDeployTask": "publish-release",
+    "appService.deploySubpath": "bin\\Release\\net8.0\\publish",
+    "appService.defaultWebAppToDeploy": "/subscriptions/8c916d82-67db-4a7d-b620-dba74297d923/resourceGroups/linyawebappservice/providers/Microsoft.Web/sites/linyawebappservice"
+}

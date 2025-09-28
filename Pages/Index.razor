@@ -1,0 +1,327 @@
+@page "/"
+
+<!--
+  This Razor component reproduces the structure and content of the original
+  static résumé and portfolio page.  All markup is preserved and adapted
+  for Blazor Server.  Dynamic values such as the current year are bound
+  using C#.  The corresponding CSS and JavaScript are loaded in the
+  _Host.cshtml file, while all images and static assets reside in the
+  wwwroot folder.
+-->
+
+<!-- Navigation bar -->
+<header id="header">
+    <div class="container nav-container">
+        <a href="#home" class="logo" aria-label="Go to home section">
+            <span class="logo-text"></span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+            <button
+                class="nav-toggle"
+                id="nav-toggle"
+                aria-expanded="false"
+                aria-label="Toggle navigation menu"
+            >
+                <!-- Simple hamburger icon created with spans -->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Linya Ruan</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Software Developer C# &amp; AI Developer
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img
+                    src="assets/hero.png"
+                    alt="Illustration of a designer working on a laptop"
+                />
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container stats-container">
+            <div class="stat-card">
+                <h3>3<span class="plus">+</span></h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-card">
+                <h3>10<span class="plus">+</span></h3>
+                <p>Completed Projects</p>
+            </div>
+            <div class="stat-card">
+                <h3>6<span class="plus">+</span></h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-card">
+                <h3>20<span class="plus">+</span></h3>
+                <p>Certifications</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <!--
+                  The about illustration is a minimalist vector portrait created
+                  specifically for this project.  It conveys a friendly,
+                  professional attitude without depicting a real person.
+                -->
+                <img
+                    src="assets/about.png"
+                    alt="Minimalist vector portrait representing the developer"
+                />
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>
+                    I am a dedicated software developer specializing in C# and the development of
+                    customized enterprise applications.
+                    My expertise includes the secure use of GitLab CI/CD, containerization with
+                    Docker, and orchestration using Kubernetes, complemented by modern agile methods
+                    such as Scrum and Kanban.
+                </p>
+                <p>
+                    I am particularly experienced in the design and implementation of high‑performance C#.NET and
+                    Blazor applications (including MudBlazor) with user‑friendly web UIs. In addition,
+                    I have in‑depth knowledge of Figma, HTML, CSS, and SQL, which enables me to
+                    efficiently implement functional and aesthetically appealing solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <img src="assets/html5.png" alt="HTML5 logo" />
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/css3.png" alt="CSS3 logo" />
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/javascript.png" alt="JavaScript logo" />
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/nodejs.png" alt="Node.js logo" />
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/react.png" alt="React logo" />
+                    <span>React</span>
+                </div>
+                <div class="skill-card">
+                    <img src="assets/postgres.png" alt="PostgreSQL logo" />
+                    <span>PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters" role="tablist" aria-label="Project filters">
+                <button class="filter-btn active" data-filter="all" role="tab">All</button>
+                <button class="filter-btn" data-filter="Figma" role="tab">Figma</button>
+                <button class="filter-btn" data-filter="Web" role="tab">Web</button>
+                <button class="filter-btn" data-filter="App" role="tab">App</button>
+            </div>
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="Figma">
+                    <img
+                        src="assets/portfolio_ecommerce.jpg"
+                        alt="Screenshots of a responsive e‑commerce website layout"
+                    />
+                    <div class="portfolio-overlay">
+                        <h3>Figma</h3>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="Web">
+                    <img
+                        src="assets/portfolio_designblog.jpg"
+                        alt="Colourful design blog website mockups"
+                    />
+                    <div class="portfolio-overlay">
+                        <h3>Web</h3>
+                    </div>
+                </div>
+                <!-- Additional placeholder items; these illustrate filtering functionality -->
+                <div class="portfolio-item" data-category="App">
+                    <img
+                        src="assets/portfolio_abstract.jpg"
+                        alt="Abstract geometric illustration with vibrant shapes"
+                    />
+                    <div class="portfolio-overlay">
+                        <h3>App</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2025 &ndash; Present</span>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer C# &amp; VR Developer</h3>
+                        <p class="timeline-org">velpTEC edutainment</p>
+                        <p>
+                            • Managed version control with Git and CI/CD workflows, ensuring efficient project delivery.
+                        </p>
+                        <p>
+                            • Designed and maintained high‑performance C# applications using Microsoft .NET Framework and Blazor, focusing on user‑friendly interfaces.
+                        </p>
+                        <p>
+                            • Co‑developed and implemented VR‑supported learning content, enhancing educational processes.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2023 &ndash; 2025</span>
+                    <div class="timeline-content">
+                        <h3>Senior Software Engineer C# &amp; AI Software Developer</h3>
+                        <p class="timeline-org">UNITY Consulting &amp; Innovation</p>
+                        <p>
+                            • Quality assurance and commissioning of AI‑based systems
+                        </p>
+                        <p>
+                            • Development and optimisation of Unity3D applications and plugins (C#, Java)
+                        </p>
+                        <p>
+                            • Technical conception and implementation of cross‑app solutions
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2023 &ndash; 2023</span>
+                    <div class="timeline-content">
+                        <h3>C# Lecturer</h3>
+                        <p class="timeline-org">SRH Fachschulen</p>
+                        <p>
+                            • Teaching AR&amp;VR in unity3D courses ( Harry Potter Game )
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>
+                Have a project in mind or just want to say hello? Fill out the
+                form below and I'll get back to you soon.
+            </p>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your full name"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@@example.com"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="social-links">
+            <!-- Social icons loaded from FontAwesome SVG files placed in assets -->
+            <a
+                href="https://github.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub Profile"
+            >
+                <img src="assets/github.svg" alt="GitHub icon" />
+            </a>
+            <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn Profile"
+            >
+                <img src="assets/linkedin.svg" alt="LinkedIn icon" />
+            </a>
+            <a
+                href="mailto:hello@@example.com"
+                aria-label="Send an email"
+            >
+                <img src="assets/envelope.svg" alt="Email icon" />
+            </a>
+        </div>
+        <p class="footer-text">
+            &copy; @DateTime.Now.Year Linya Ruan. Let's talk for Something special.
+        </p>
+    </div>
+</footer>
