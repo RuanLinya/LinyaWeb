@@ -22,6 +22,6 @@ LinyaWebServer/
 
 ☁️ Deployment nach Azure
 
-Über [https://<your-app-name>.azurewebsites.net](https://linyawebappservice-cqe2esehcacceseb.northeurope-01.azurewebsites.net/) können Sie darauf zugreifen.
+Über [https://LinyaRuan.azurewebsites.net](https://linyawebappservice-cqe2esehcacceseb.northeurope-01.azurewebsites.net/) können Sie darauf zugreifen.
 
 
