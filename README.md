@@ -20,7 +20,7 @@ LinyaWebServer/
 └── README.md              
 ```        
 
-☁️ Deployment nach Azure
+☁️ Deployment nach Azure App Service 
 
 Über [https://LinyaRuan.azurewebsites.net](https://linyawebappservice-cqe2esehcacceseb.northeurope-01.azurewebsites.net/) können Sie darauf zugreifen.
 
