@@ -18,6 +18,7 @@ LinyaWebServer/
 │   ├── script.js         
 │   └── assets/            
 └── README.md              
+        
 
 ☁️ Deployment nach Azure
 
