@@ -3,7 +3,7 @@
 Dieses Repository enthält eine Blazor Server-Implementierung der ursprünglichen LinyaWeb-Website für Lebensläufe und Portfolios. 
 
 ## 📂 Projektstruktur
-
+```
 LinyaWebServer/
 ├── App.razor             
 ├── Program.cs            
@@ -18,7 +18,7 @@ LinyaWebServer/
 │   ├── script.js         
 │   └── assets/            
 └── README.md              
-        
+```        
 
 ☁️ Deployment nach Azure
 
